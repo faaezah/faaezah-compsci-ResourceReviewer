@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The w3 css template was used. There are permissions for it to be used and modified -->
+    <title>Resource Review</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body, html {
+          height: 100%;
+          font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+          background-position: center;
+          background-size: cover;
+          background-color: #00008B;
+          background-img: url('Screenshot%202026-05-23%20185056.png');
+          min-height: 75%;
+        }
+
+
+        .menu {
+        }
+
+        .img-complete {
+        width: 90%;
+        height: 1100px;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nav bar  -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+            <a href="#home" class="w3-button w3-block w3-indigo">HOME</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block w3-indigo">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#menu" class="w3-button w3-block w3-indigo">OPTIONS</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#where" class="w3-button w3-block w3-indigo">MUSIC SUGGESTIONS</a>
+        </div>
+    </div>
+</div>
+
+<!-- The header is customized below -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <img src="Screenshot%202026-05-23%20185056.png" class="img-complete">
+        <p class="w3-tag">Ultimate Guide to receiving all the resources YOU need</p>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">Resource<br>Review</span><br>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+        <!--<p class="w3-text-white">Made by Vista Ridge High School Students for Vista Ridge High School Students</p>-->
+    </div>
+</header>
+
+<!-- This is the second section, where the resource review is explained-->
+<div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE RESOURCE REVIEW</span></h5>
+            <p>Resource review was founded to help students have accessible notes and resource materials when studying for the competitive AP exams.</p>
+            <p>Resource Review is made by the students who wished to have this resource and wanted to make an impact for the future high school students.</p>
+            <div class="w3-panel w3-leftbar w3-light-grey">
+                <p><i>"Never regard study as a duty, but as the enviable opportunity to learn." - Albert Einstein</i></p>
+
+            </div>
+            <img src="Screenshot%202026-05-26%20083852.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+            <p><strong>Opening hours:</strong>  We are here for you every day, every hour, every minute</p>
+            <p><strong>Address:</strong> On the internet :)</p>
+        </div>
+    </div>
+
+
+<!-- This gives the options for the people to choose what to access reviews for -->
+</div>
+    <div class="w3-container" id="menu">
+        <div class="w3-bar w3-center">
+            <h1>OPTIONS</h1>
+            <p1> Click which subject you would like to study.</p1> <br>
+            <a href="math.html" class="w3-button w3-pink w3-margin-right">math</a>
+            <a href="physics.html" class="w3-button w3-yellow w3-margin-right">Physics</a>
+            <a href="social.html" class="w3-button w3-green w3-margin-right">Social Studies</a>
+
+            <p> Please note that the suggested materials is not endorsed by the creators of this application. These are just optional resources one can use. Thank you for using our resource</p>
+            <p> Click the button below to view a study tip!</p>
+            <button onclick="tipsMapper()" class="w3-button w3-indigo w3-margin-right">Random Study tip</button>
+            <div id="area4text"></div>
+            </div>
+        </div>
+
+
+    <!--Music playlists section -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MUSIC TIPS</span></h5>
+            <img src="Screenshot%202026-05-24%20124423.png" class="w3-image" style="width:50%">
+            <p1>This image is property of Spotify</p1>
+            <h2>Study Tips</h2>
+            <div class="w3-white w3-center">
+                <p><strong>Lo‑Fi Beats:</strong> https://open.spotify.com/playlist/37i9dQZF1DX8Uebhn9wzrS</p>
+                <p><strong>Deep Focus:</strong> https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ</p>
+                <p><strong>Chill Instrumentals:</strong> https://open.spotify.com/playlist/37i9dQZF1DX0khTY3HFA4M</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Footer for the Project -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+    <p>Programmed by Faaezah, Parmayshi and Kira <a href="" title="Faaezah" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+<!-- Javascript to bring the random study button to life-->
+<script>
+    const listOfThings = [
+           "The Pomodoro Technique: Break your study sessions into 25 minutes of highly focused work, followed by a 5-minute break. This prevents burnout and keeps your brain sharp.",
+           "Active Recall: Ditch passive reading. Instead, test your knowledge using flashcards or practice tests to force your brain to retrieve information, which vastly improves long-term memory.",
+           "The Feynman Technique: Try explaining the concepts you are learning out loud to a friend, or even just to yourself in the mirror. If you can teach it simply, it means you truly understand it.",
+           "Spaced Repetition: Instead of cramming the night before, spread your studying out over a few days or weeks. Revisit difficult material after 1, 3, 5, and 7 days to permanently lock it in.",
+           "Eliminate Distractions: Silence your phone and hide it away, close unnecessary tabs, or use productivity tools like the Forest App to build a distraction-free zone.",
+    ];
+    function tipsMapper() {
+           let randGenerated = Math.floor(Math.random() * listOfThings.length);
+           document.getElementById("area4text").innerHTML = listOfThings[randGenerated];
+}
+</script>
+
+</body>
+</html>
